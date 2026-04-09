@@ -65,10 +65,10 @@ public class genericstack<E> {
 
         E[] temp = (E[]) new Object[capacity];
         for(int i = 0; i <= top; i++) {
-            temp[i] = arr[i];
+            temp[i] = arr[i]; // copy arr
         }
 
-        arr = temp;
+        arr = temp; // set oldarr on newarr
     }
 
     @Override
